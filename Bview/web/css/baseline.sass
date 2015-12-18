@@ -1,0 +1,321 @@
+///Paleta de Colores///
+$ColorUno: #F26101
+$ColorDos: #FFFFFF
+$ColorTres: #D9E8F5
+$ColorCuatro: #91BED4
+$ColorCinco: #304269
+
+
+@font-face
+	font-family: Montserrat
+	src: url(../fonts/Montserrat-Regular.ttf)
+
+	font-family: Quicksand
+	src: url(../fonts/Quicksand-Regular.ttf)
+
+*
+	///Modelo de Caja Nuevo////
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+html
+	font-size: 62.5%
+
+body
+	///Base del Body///
+	width: auto
+	position: relative
+
+	background: #ffffff
+	color: #717171
+
+	min-height: 100%
+
+	letter-spacing: 0.05em
+	line-height: 1.7
+	font-family: 'Montserrat', sans-serif !important
+
+	font-style: normal
+	font-weight: 400 !important 
+	font-size: 1.6rem 
+
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+	overflow-x: hidden
+
+///links sin estilos///
+a
+	text-decoration: none !important
+	&:hover,:active
+		text-decoration: none !important
+		outline: none !important
+	
+.center
+	text-align: center
+
+
+h1, h2, h3, h4
+	text-rendering: optimizeLegibility
+	letter-spacing: 0
+h5
+	font-size: 28px
+	margin: 0
+	padding: 0
+	text-align: center
+	font-weight: 300
+	letter-spacing: 0.025em
+	margin-bottom: 21px
+
+hr
+	border-top: none
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.2)
+	box-shadow: 0 1px rgba(255, 255, 255, 0.5)
+h2
+	text-transform: uppercase
+
+.odd
+	min-height: 500px
+	overflow: hidden
+
+.cd-section:nth-child(odd)
+	border: 1px solid #f5f5f7
+	background-color: #FBFAFB
+
+///Colores///
+.bg-uno
+	background-color: $ColorUno !important
+
+.bg-dos
+	background-color: $ColorDos !important
+
+.bg-tres
+	background-color: $ColorTres !important
+
+.bg-cuatro
+	background-color: $ColorCuatro !important
+
+.bg-cinco
+	background-color: $ColorCinco !important
+
+.ctext-uno
+	color: $ColorUno !important
+
+.ctext-dos
+	color: $ColorDos !important
+
+.ctext-tres
+	color: $ColorTres !important
+
+.ctext-cuatro
+	color: $ColorCuatro !important
+
+.ctext-cinco	
+	color: $ColorCinco !important
+
+///Textos///
+.hint-text
+	color: #323237
+	font-weight: 400
+	font-size: 15px
+	text-transform: uppercase
+	letter-spacing: 0.03em
+	margin-bottom: 7px
+
+.textuno
+	font-size: 16px
+	font-size: 1.6rem !important
+	line-height: 25px
+
+.textdos
+	font-size: 20px
+	font-size: 2.0rem !important
+	line-height: 29px
+ 
+.texttres
+	font-size: 28px
+	font-size: 2.8rem !important
+	line-height: 36px
+
+.textcuatro
+	font-size: 36px
+	font-size: 3.6rem !important
+	line-height: 46px
+
+.textcinco
+	font-size: 52px
+	font-size: 5.2rem !important
+	line-height: 60px
+
+.quick
+	font-family: 'Quicksand', sans-serif
+
+h6
+	font-size: 42px
+	margin: 0
+	padding: 0
+	text-align: left
+	font-weight: 300
+	letter-spacing: 0.025em
+	line-height: 1.2
+	color: #323237
+
+//Espacios y Margins
+.spacing
+	padding-top: 84px
+	padding-bottom: 84px
+
+.spacingmini
+	padding-top: 42px
+	padding-bottom: 42px
+
+.spacingmini2
+	padding-top: 21px
+	padding-bottom: 21px
+
+.below21
+	margin-bottom: 21px
+
+.below42
+	margin-bottom: 42px !important
+
+.padd-t
+	padding-top: 14px !important
+
+.button
+	display: inline-block
+	height: 42px
+	line-height: 38.5px
+	padding: 0 28px
+
+	text-transform: uppercase
+	letter-spacing: 0.05em
+	font-weight: 600
+	text-align: center
+
+//Bloques
+
+.Subtitle 
+	position: relative
+	font-size: 20px
+	color: #666666
+	line-height: 31.5px
+	text-transform: uppercase
+	letter-spacing: 0.085em
+	text-align: center
+	padding-bottom: 31.5px
+	margin-bottom: 35px
+
+
+.Subtitle:before
+	position: absolute
+	display: block
+	content: " "
+	width: 40px
+	height: 3px
+	background-color: $ColorUno
+	left: 50%
+	margin-left: -20px
+	bottom: 0
+
+span 
+	color: $ColorUno
+	@extend .quick
+
+.cont
+	position: relative
+	padding: 50px
+	background-color: white
+	-webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05)
+	-moz-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05)
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05)
+
+	
+//Errores
+
+.nonerror
+	display: none
+
+.error
+	display: block
+	color: $ColorCinco 
+	letter-spacing: 0
+	text-align: center
+	font-size: 13px
+	font-weight: 400
+
+.isError
+	border-color: $ColorUno
+
+	
+
+
+///Mixins///
+@mixin implink($Color1, $Color2, $Color3)
+
+	border: 1px solid white
+	color: white
+	&:hover
+		color: $Color1
+		background-color: $Color2
+		border: 1px solid $Color3
+
+@mixin valign($top, $trans)
+	
+	
+	top: $top
+	//trasladamos el contenido 50 para centrar correctamente
+	-webkit-transform: translateY(-$trans)
+	-moz-transform: translateY(-$trans)
+	-ms-transform: translateY(-$trans)
+	-o-transform: translateY(-$trans)
+	transform: translateY(-$trans)
+
+input, select, textarea
+	display: block
+	width: 100%
+	height: 46px
+	min-height: 46px
+
+	border: 1px solid #cccccc
+	padding: 0 15px 0 55px !important
+	margin-bottom: 2rem
+	vertical-align: middle
+
+	background-position: left 15px center
+	background-repeat: no-repeat
+
+	font-size: 14px
+	font-weight: 400
+	letter-spacing: 0.025em
+	outline: none
+
+button
+	display: block
+	width: 100%
+	height: 46px
+	border: none
+	font-size: 14px
+	&:hover
+		background: #475258
+		color: #ffffff
+
+.Vdivider
+	border-right: 1px solid $ColorTres
+	
+label
+	font-size: 18px
+	@extend .quick
+	
+fieldset
+	border: none !important
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button 
+	-webkit-appearance: none
+	
+
+
+
+	
